@@ -1,0 +1,117 @@
+.header-wavy {
+  margin: 0 100px 0 120px;
+  position: fixed;
+  // transform: translateY(-100px);
+  background-color: transparent;
+  z-index: 999;
+  .fix-header {
+    .navbar {
+      padding: 0 $fs--large;
+      .navbar-brand {
+        img {
+          width: 80px;
+        }
+      }
+      .navbar-nav {
+        margin-left: 255px;
+        .nav-item {
+          padding-right: $fs--large;
+          .nav-link {
+            @include styleText($fs--small-1, $color-black, $fw-4);
+            text-align: center;
+            transition: all 0.2s;
+            position: relative;
+          }
+          &:hover {
+            .nav-link {
+              color: $color-vivid-pink;
+            }
+            .dot-nav {
+              width: 15px;
+              height: 15px;
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+          .dot-nav {
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            margin-left: 20px;
+            margin-right: 15px;
+            margin-top: 20px;
+            position: absolute;
+            // display: block;
+            background-color: $color-vivid-pink;
+            transform: scale(0);
+            transition: all 0.3s;
+          }
+        }
+        .nav-item.active {
+          .dot-nav {
+            opacity: 1;
+            transform: scaleY(1);
+          }
+        }
+        .nav-com-icon {
+          transform: translateX(-20px);
+        }
+      }
+    }
+  }
+}
+.header-scroll {
+  width: 100%;
+  padding: 5px 0;
+  height: 50px;
+  margin: 0;
+  transform: translateX(100px);
+  box-shadow: 1px 1px 5px 1px grey;
+  background-color: white;
+  animation: animateHeader 1s forwards;
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-nav {
+    padding-left: 200px;
+    .nav-item {
+      .dot-nav {
+        margin-top: 0px !important;
+      }
+    }
+  }
+  @keyframes animateHeader {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+.header-scroll-two {
+  animation: animateHeaderTwo 1s forwards;
+  @keyframes animateHeaderTwo {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+//
+//
+.background-header {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(./../../images/images/yellow_top_wave_01.png);
+  z-index: -3;
+  background-position: 0% 0%;
+  background-size: 1550px 250px;
+  background-repeat: no-repeat;
+}
+

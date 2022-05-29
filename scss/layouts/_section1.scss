@@ -1,0 +1,15 @@
+#sec-1 {
+  padding-top: 70px;
+  .row {
+    .left-side {
+      h5 {
+        @include styleText($fs--normal, $color-vivid-pink, $fw-5);
+        font-family: "Montserrat", sans-serif;
+      }
+      h1{
+          @include styleText($fs--xx-large,$color-black,$fw-5);
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+  }
+}

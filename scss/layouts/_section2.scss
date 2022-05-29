@@ -1,0 +1,65 @@
+.sec-2 {
+  overflow-x: hidden;
+  position: relative;
+  padding: 30px 0 50px 0;
+  .card {
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+    .img-card {
+      overflow: hidden;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      img {
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+    .card-body {
+      padding: 1rem 2em 2em 2em;
+      .card-title {
+        @include styleText(12px, $color-vivid-pink, $fw-5);
+        text-align: center;
+      }
+      h1 {
+        @include styleText(22px, $color-black, $fw-5);
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+      }
+      p {
+        padding: 0.6rem 0 0 0;
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+    &:hover {
+      box-shadow: 0px 15px 15px 0px rgba(128, 128, 128, 0.573);
+    }
+  }
+}
+.bg-1 {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  z-index: -2;
+  top: 300px;
+  background-position: 50% 50%;
+  background-size: 1700px 270px;
+  background-repeat: no-repeat;
+  background-image: url(./../../images/images/Violet_top_left_wave.png);
+}
+.bg-2 {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 680px;
+  z-index: -1;
+  background-position: 20% 100%;
+  background-size: 2000px 600px;
+  background-color: #dcd1f0;
+  background-repeat: no-repeat;
+  background-image: url(./../../images/images/Wave_White_bottom_right_shape_01.png);
+}

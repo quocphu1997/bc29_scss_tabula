@@ -489,11 +489,15 @@ body {
 }
 
 .sec-3 form .type-user1 {
-  margin-right: 14px;
+  width: 45%;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .sec-3 form .type-user2 {
-  margin-left: 5px;
+  width: 45%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .sec-3 .bg-3 {
